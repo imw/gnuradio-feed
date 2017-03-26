@@ -6,10 +6,12 @@ PKG_NAME:=gnuradio
 PKG_VERSION:=master
 PKG_RELEASE:=$(GIT_COMMIT_TSTAMP)
 
-PKG_SOURCE:=$(PKG_VERSION).tar.gz
+PKG_SOURCE:=$(PKG_VERSION).zip
 PKG_BUILD_DIR:=$(BUILD_DIR)/gnuradio-$(PKG_VERSION)
-PKG_SOURCE_URL:=git://github.com/gnuradio/gnuradio/archive/$(PKG_SOURCE)
+PKG_SOURCE_URL:=https://github.com/gnuradio/gnuradio/archive/$(PKG_SOURCE)
 PKG_MD5SUM:=805540737e3c40a7c29b31ec2b9d01c5
+
+PKG_CAT:=unzip
 
 include $(INCLUDE_DIR)/package.mk
 

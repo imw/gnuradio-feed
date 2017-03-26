@@ -1,6 +1,5 @@
 include $(TOPDIR)/rules.mk
 
-
 GIT_COMMIT_TSTAMP:=$(shell git log -n 1 --pretty=%at . )
 
 PKG_NAME:=gnuradio
@@ -21,7 +20,7 @@ define Package/gnuradio
   URL:=http://gnuradio.org/
 endef
 
-define Package/bridge/description
+define Package/gnuradio/description
  Neat stuff with radios
 endef
 

@@ -23,7 +23,7 @@ define Package/gnuradio
 endef
 
 define Package/gnuradio/description
- Neat stuff with radios
+  Neat stuff with radios
 endef
 
 define Build/Configure

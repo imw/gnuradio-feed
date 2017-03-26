@@ -18,7 +18,6 @@ define Package/gnuradio
   SECTION:=utils
   CATEGORY:=Utilities
   TITLE:=GNU Radio
-  #DESCRIPTION:=This variable is obsolete. use the Package/name/description define instead!
   URL:=http://gnuradio.org/
 endef
 
@@ -30,9 +29,9 @@ define Build/Configure
   $(call Build/Configure/Default,--with-linux-headers=$(LINUX_DIR))
 endef
 
-define Package/bridge/install
+define Package/gnuradio/install
         $(INSTALL_DIR) $(1)/usr/sbin
         $(INSTALL_BIN) $(PKG_BUILD_DIR)/brctl/brctl $(1)/usr/sbin/
 endef
 
-$(eval $(call BuildPackage,bridge))
+$(eval $(call BuildPackage,gnuradio))
